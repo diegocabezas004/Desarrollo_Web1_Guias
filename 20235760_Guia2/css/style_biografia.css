@@ -1,0 +1,52 @@
+*{
+    background-color: gainsboro;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin-right: 5%;
+    margin-left: 7%;
+}
+
+.imagen-intro{
+    width: 30%;
+    display: block;
+    height: auto;
+    border-bottom: 3px solid;
+    border-right: 3px solid ;
+    margin: 0 auto;
+}
+
+header{
+    font-size: 23px;
+    font-weight: bold;
+    color: navy;
+    text-align: center;
+}
+
+nav span.uno a{
+    background-color: gray;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    color: black;
+    font-size: 12px;
+    padding: 9px;
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    margin: 22%;
+}
+
+
+section.descripcion article h3{
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 28px;
+}
+
+section.descripcion article p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+section.descripcion article p:first-letter{
+    font-size: 22px;
+    font-weight: bold;
+}
