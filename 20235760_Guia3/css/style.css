@@ -20,6 +20,7 @@ footer{
     margin-top: 20px;
     background: #16A085;
     height: 50px;
+    padding-top: 1rem;
 }
 
 footer div{
@@ -50,6 +51,7 @@ section{
     margin: 0 auto;
     width: 90%;
     overflow: hidden;
+    position: relative;
 }
 
 section article{
@@ -75,7 +77,8 @@ section article img{
 
 section article:nth-child(2){
     background-color: rgba(70,130,180,0.9);
-    position: relative;
+    position: static;
     left: 100px;
     top: 50px;
+    display: none;
 }
