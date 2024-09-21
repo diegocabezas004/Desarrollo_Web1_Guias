@@ -1,5 +1,3 @@
-/* FUENTES */
-
 @import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
 
 * {
@@ -7,8 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
-
 
 body {
     margin: 0px;
@@ -58,15 +54,11 @@ h1 {
     overflow: hidden;
 }
 
-/* Contenido principal de las paginas */
-
 #contenido {
     width: 960px;
     margin: 0px auto;
     clear: left;
 }
-
-/* Pie de pagina */
 
 footer {
     text-align: center;
@@ -78,8 +70,6 @@ footer {
     color: white;
     width: 100%;
 }
-
-/* Contenido página index */
 
 .plan {
     width: 258px;
@@ -101,7 +91,6 @@ footer {
     margin-right: -1px;
 
 }
-
 
 .boton{
     background-color: #464d52;
@@ -126,8 +115,6 @@ footer {
     display: block;
 }
 
-/* Contenido de la página planes */
-
 .planes{
     width: 900px;
     background: white;
@@ -147,8 +134,7 @@ footer {
     font-weight: bold;
 }
 
-/* Contenido de la página galeria */
-#galeria .plan{
+#galeria .plan p{
     text-align: center;
     font-style: italic;
 }

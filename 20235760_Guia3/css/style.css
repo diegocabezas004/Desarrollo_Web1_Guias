@@ -1,7 +1,7 @@
 @import url(https://font.googleapis.com/css?family=Muli);
 
 *{
-    margin: 1;
+    margin: 0;
     padding: 0;
 }
 
@@ -14,13 +14,16 @@ header{
     background: #16A085;
     height: 130px;
     overflow: hidden;
+    position: sticky;
+    top: 0;
 }
 
 footer{
     margin-top: 20px;
     background: #16A085;
     height: 50px;
-    padding-top: 1rem;
+    position: sticky;
+    bottom: 0;
 }
 
 footer div{
@@ -51,21 +54,18 @@ section{
     margin: 0 auto;
     width: 90%;
     overflow: hidden;
-    position: relative;
 }
 
 section article{
     font-size: 0.9rem;
     height: 340px;
-    width: 33.33%;
-    display: flexbox;
-    float: left;
-    overflow: hidden;
-    margin: 0.5%;
     width: 32.33%;
+    float: left;
+    margin: 0.5%;
     border: 2px dashed #16A085;
     padding: 1%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 section article img{
