@@ -66,20 +66,20 @@ p.terminos {
 
 .formdatos form {
     width: 1115px;
-    height: 400px;
+    height: 500px;
     border-radius: 15px;
     padding: 22px;
     margin: 20px auto;
 }
 
-.formdatos fieldset {
+.formdatos form fieldset {
     font-family: 'Century Gothic';
     padding: 12px;
     float: left;
     width: 25%;
     margin-top: 5px;
     border-radius: 10px;
-    height: 240px;
+    height: 332px;
     margin-left: 13px;
 }
 
@@ -91,7 +91,7 @@ p.terminos {
     margin: 0px 22px;
 }
 
-.formdatos button {
+.formdatos form button {
     margin-top: 3px;
     margin-left: 830px;
 }
@@ -120,6 +120,6 @@ form {
 }
 
 h1 {
-    padding: 6px;
+    padding-top: 6px;
     color: #fff;
 }
