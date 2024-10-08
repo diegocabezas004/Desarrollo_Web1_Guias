@@ -22,7 +22,7 @@ nav ul li a{
     margin: 0em .5em;
     display: block;
     color: white;
-    transition: color 1s, trandform 3s;
+    transition: color 1s, transform 3s;
 }
 
 nav ul li a:hover{
