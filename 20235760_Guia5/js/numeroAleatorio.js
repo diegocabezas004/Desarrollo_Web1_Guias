@@ -18,6 +18,10 @@ function generarNumeroAleatorio(){
         } else if (intentos == numeroIntentos){
             mensaje = `Su número de intentos ha terminado.
                 El numero oculto era: ${numeroAleatorio}. Refresque la página para volver a jugar.`;
+        } else if (numero > numeroAleatorio){
+            mensaje = "El número es que dijo es mayor que el aleatorio."
+        } else if (numero < numeroAleatorio){
+            mensaje = "El número que dijo es menor que el aleatorio"
         } else {
             mensaje = `Vuelve a intentar. Quedan ${
                 numeroIntentos - intentos
