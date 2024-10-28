@@ -110,6 +110,27 @@ section#foda #ame h1{
     text-align: center;
 }
 
+table {
+    text-align: left;
+    position: relative;
+    border-collapse: collapse; 
+    background-color: #f6f6f6;
+  }
+
+  td, th {
+    border: 1px solid #999;
+    padding: 20px;
+    text-align: center;
+  }
+  th {
+    background: navy;
+    color: wheat;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+  }
+
 @media (max-width: 768px) {
     * {
         font-size: 18px;
