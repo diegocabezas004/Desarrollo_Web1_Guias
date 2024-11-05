@@ -1,7 +1,7 @@
 const newForm = document.getElementById("idNewForm");
 
-const buttonCrear = getElementById("idBtnCrear");
-const buttonAddElemento = getElementById("idBtnAddElement");
+const buttonCrear = document.getElementById("idBtnCrear");
+const buttonAddElemento = document.getElementById("idBtnAddElement");
 
 const cmbElemento = document.getElementById("idCmbElemento");
 
@@ -11,11 +11,11 @@ const nombreElemento = document.getElementById("idNombreElemento");
 const modal = new bootstrap.Modal(document.getElementById("idModal"), {});
 
 const verificarTipoElemento = function () {
-    let elemento = cmbElemento.ariaValueMax;
+    let elemento = cmbElemento.value;
     if (elemento != ""){
         modal.show();
     }else{
-        alert("Debe seleccionar el elemento qeu se creara");
+        alert("Debe seleccionar el elemento que se creara");
     }
 };
 
@@ -41,11 +41,15 @@ const newSelect = function(){
     labelId.textContent = `ID de control : ${nombreElemento.value}`;
 
     let divElemento = document.createElement("div");
+
     divElemento.setAttribute("class", "form-floating");
 
     divElemento.appendChild(addElemento);
-    divElemento.appendChild(labelId);
+    
+    divElemento.appendChild(labelElemento);
 
+    newForm.appendChild(labelId)
+    
     newForm.appendChild(divElemento);
 };
 
@@ -56,7 +60,7 @@ const newRadioCheckbox = function (newElemento){
     addElemento.setAttribute("type", newElemento);
     addElemento.setAttribute("class", "form-check-input");
 
-    let labelElemento = document.createElement("input");
+    let labelElemento = document.createElement("label");
     labelElemento.setAttribute("class", "form-check-label");
     labelElemento.setAttribute("for", `id${nombreElemento.value}`);
 
@@ -66,13 +70,14 @@ const newRadioCheckbox = function (newElemento){
     labelId.textContent = `ID de control : ${nombreElemento.value}`;
 
     let divElemento = document.createElement("div");
+    
     divElemento.setAttribute("class", "form-check");
 
     divElemento.appendChild(addElemento);
 
     divElemento.appendChild(labelElemento);
 
-    newForm-appendChild(labelId);
+    newForm.appendChild(labelId);
 
     newForm.appendChild(divElemento);
 };
@@ -89,7 +94,10 @@ const newInput = function (newElemento) {
     addElemento.setAttribute("placeholder", tituloElemento.value);
 
     let labelElemento = document.createElement("label");
-    labelElemento.setAttribute("class", "bi bi-tag");
+    labelElemento.setAttribute("for", `id${nombreElemento.value}`);
+
+    let iconLabel = document.createElement("i");
+    iconLabel.setAttribute("class", "bi bi-tag");
 
     labelElemento.textContent = tituloElemento.value;
 
